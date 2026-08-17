@@ -1,0 +1,374 @@
+/* =========================================
+   FINAL DESIGN REFINEMENTS
+   Deepak Joshi Tantra Research Center
+========================================= */
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header .brand-name b {
+    font-size: 25px;
+    letter-spacing: -.01em;
+}
+
+header nav a {
+    font-size: 13px;
+}
+
+header .head-btn {
+    font-size: 12px;
+    padding: 14px 21px;
+    border-radius: 9px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    overflow: hidden;
+}
+
+.hero-content {
+    padding-top: 5px;
+}
+
+.hero-image-frame {
+    animation: tantra-image-float 5.5s ease-in-out infinite;
+}
+
+@keyframes tantra-image-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-13px);
+    }
+}
+
+.hero-main-btn {
+    min-height: 52px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 9px;
+}
+
+.hero-discover {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.about-btn {
+    min-height: 50px;
+    padding: 15px 23px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services {
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.services .title {
+    margin-bottom: 35px;
+}
+
+.service-grid {
+    row-gap: 14px;
+}
+
+.service {
+    min-height: 245px;
+}
+
+
+/* =========================================
+   SACRED LINEAGE
+========================================= */
+
+.temple {
+    min-height: 450px;
+}
+
+.temple-btn {
+    min-height: 50px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why {
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.why .title {
+    margin-bottom: 32px;
+}
+
+.why-heading {
+    font-size: clamp(40px, 4.1vw, 56px);
+    white-space: nowrap;
+}
+
+.why-item p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.why-item {
+    padding: 16px 0;
+}
+
+.why-img img {
+    height: 515px;
+}
+
+.stats {
+    margin-top: 48px;
+}
+
+
+/* =========================================
+   TANTRA
+========================================= */
+
+.tantra .section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.practice {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery {
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.gallery .title {
+    margin-bottom: 32px;
+}
+
+.gallery-heading {
+    white-space: nowrap;
+    font-size: clamp(40px, 4.3vw, 58px);
+}
+
+.gallery-grid {
+    grid-auto-rows: 215px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+
+/* =========================================
+   WHATSAPP DIRECT CARD
+========================================= */
+
+.whatsapp-direct {
+    min-height: 70px;
+    border-radius: 9px;
+}
+
+.whatsapp-direct > b {
+    min-height: 44px;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.whatsapp-direct strong {
+    font-size: 25px;
+}
+
+
+/* =========================================
+   FLOATING WHATSAPP
+========================================= */
+
+.float {
+    min-width: 55px;
+    min-height: 55px;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+
+.float .wa-icon {
+    font-size: 23px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding-top: 40px;
+}
+
+.footer-links {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-image-frame {
+        width: min(410px, 100%);
+        height: 460px;
+    }
+
+    .why-heading,
+    .gallery-heading {
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+
+    header .brand-name b {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 48px;
+    }
+
+    .hero-image-frame {
+        width: min(370px, 92%);
+        height: 410px;
+    }
+
+    .about {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .services {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .temple {
+        min-height: 420px;
+    }
+
+    .why {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .why-heading {
+        white-space: normal;
+    }
+
+    .tantra .section {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .gallery {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .gallery-heading {
+        white-space: normal;
+    }
+
+    .contact {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .whatsapp-direct {
+        min-height: 68px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+    header .brand-name b {
+        font-size: 16px;
+    }
+
+    .hero-image-frame {
+        height: 370px;
+    }
+
+    .about-btn,
+    .temple-btn {
+        width: 100%;
+    }
+
+    .why-heading {
+        font-size: 38px;
+    }
+
+    .whatsapp-direct {
+        grid-template-columns: auto 1fr auto;
+    }
+
+}
